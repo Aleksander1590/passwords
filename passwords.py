@@ -33,10 +33,10 @@ def has_lower_letters(password):
 def password_rating(password):
   functions = [is_very_long(password), has_digit(password), has_letters(password), has_upper_letters(password), has_lower_letters(password)]
   score = 0
-  completed_function = 
+  completed_functions = 
   for function in functions:
     if function == True:
-        score = completed_function*2
+        score = completed_functions*2
   return score 
  
 
