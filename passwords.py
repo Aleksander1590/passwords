@@ -32,9 +32,10 @@ def has_lower_letters(password):
 
 def password_rating(password): # Функция проверки рейтига пароля
   functions = [is_very_long(password), has_digit(password), has_letters(password), has_upper_letters(password), has_lower_letters(password)]
+  score = 0
   for function in functions:
     if function == True:
-      score = 
+      score += 2
   return score
 
 
