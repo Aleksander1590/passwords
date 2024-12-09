@@ -1,8 +1,6 @@
 def is_very_long(password): 
-    if not len(password) < 12:
-        return True 
-
-
+    return len(password) >= 12
+        
 def has_digit(password): 
     return any(symbol.isdigit() for symbol in password) 
 
@@ -28,7 +26,8 @@ def password_rating(password):
         is_very_long(password), 
         has_digit(password), 
         has_letters(password), 
-        has_upper_letters(password), has_lower_letters(password)]
+        has_upper_letters(password), has_lower_letters(password)
+    ]
     score = 0
     for function in functions:
         if function:
