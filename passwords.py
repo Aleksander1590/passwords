@@ -1,6 +1,7 @@
 def is_very_long(password): 
     return len(password) >= 12
-        
+
+
 def has_digit(password): 
     return any(symbol.isdigit() for symbol in password) 
 
